@@ -4,7 +4,7 @@ body{
 }
 header{
     height: 65px;
-    background-color: #7b1fa2;
+    background-color: #a2651f;
     color: white;
     display: flex;
     align-items: center;
@@ -40,18 +40,18 @@ header{
     width: 40%;
     background-color: #424242;
 }
-.caja-presentacion{
+.caja-presentacion{         
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60%;
-    background-color: #F2F2F2;
-    color: #303030;
-    padding: 10px;
+    background-color: #181717;
+    color: #f3eded;
+    padding: 12px;
 }
 
 .dos{
-    background-color: #F2F2F2;
+    background-color: #c8c7c7;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -63,16 +63,33 @@ header{
 }
 .aptitudes{
     width: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #181717;
+    padding: 15px;
+    border-radius: 10px;
+
 }
 .tech-list{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     padding-top: 10px;
+   
+    
 }
 
 .tech{
     height: 90px;
+    transition: box-shadow 0.3s ease; 
 }
+
+
+.tech:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+
+
 
 .tres{
     background-color: #303030;
@@ -106,8 +123,13 @@ header{
     height: 60px;
     background-color: #F2F2F2;
     border-radius: 10px;
+    transition: box-shadow 0.3s ease;
 }
 
+.red-social:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(252, 250, 250, 0.974);
+    cursor: pointer;
+}
 footer{
     background-color: #424242;
     display: flex;
@@ -115,12 +137,16 @@ footer{
     justify-content: flex-start;
     align-items: center;
     color: #F2F2F2;
-    height: 250px;
+    height: 200px;
 }
+
+
+
 .contacto{
-    width: 30%;
+    width: 10%;
     display: flex;
     justify-content: center;
+    
 }
 
 @media (max-width: 1000px) {
